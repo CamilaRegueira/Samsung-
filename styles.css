@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-caption h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.carousel-caption p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Promotion Section */
+.promotion {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.promotion-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promotion-content img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+}
+
+.promotion-text {
+    padding: 20px;
+    max-width: 500px;
+}
+
+.promotion-text h3 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.promotion-text p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-item {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Footer Styles */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .product-item {
+        margin: 20px 0;
+    }
+
+    .promotion-content {
+        flex-direction: column;
+    }
+
+    .promotion-content img, .promotion-text {
+        width: 100%;
+    }
+}
